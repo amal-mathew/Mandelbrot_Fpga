@@ -1,0 +1,16 @@
+entity test is
+port(
+op: out std_logic_vector(7 downto 0));
+end entity;
+
+architecture rtl of test is
+begin 
+process is
+type y is in range -1000.00 to 1000.00;
+type x is in range -1000.00 to 1000.00;
+
+begin
+y=x*x;
+wait;
+
+end process;

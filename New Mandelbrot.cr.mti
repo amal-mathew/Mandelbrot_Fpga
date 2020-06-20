@@ -1,0 +1,68 @@
+/home/amalmathew/Desktop/Mandelbrot/float_pkg_c.vhdl {2 {vcom -work work -2002 -explicit -stats=none /home/amalmathew/Desktop/Mandelbrot/float_pkg_c.vhdl
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling package float_pkg
+-- Compiling package body float_pkg
+-- Loading package float_pkg
+** Warning: /home/amalmathew/Desktop/Mandelbrot/float_pkg_c.vhdl(1021): (vcom-1246) Range 0 downto 1 is null.
+** Warning: /home/amalmathew/Desktop/Mandelbrot/float_pkg_c.vhdl(1022): (vcom-1246) Range 0 downto 1 is null.
+** Warning: /home/amalmathew/Desktop/Mandelbrot/float_pkg_c.vhdl(6187): (vcom-1246) Range 2 to 1 is null.
+
+} {} {}} /home/amalmathew/Desktop/Mandelbrot/fixed_float_types_c.vhdl {1 {vcom -work work -2002 -explicit -stats=none /home/amalmathew/Desktop/Mandelbrot/fixed_float_types_c.vhdl
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling package fixed_float_types
+
+} {} {}} /home/amalmathew/Desktop/Mandelbrot/fixed_pkg_c.vhdl {2 {vcom -work work -2002 -explicit -stats=none /home/amalmathew/Desktop/Mandelbrot/fixed_pkg_c.vhdl
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Compiling package fixed_pkg
+-- Loading package MATH_REAL
+-- Compiling package body fixed_pkg
+-- Loading package fixed_pkg
+** Warning: /home/amalmathew/Desktop/Mandelbrot/fixed_pkg_c.vhdl(1470): (vcom-1246) Range 0 downto 1 is null.
+** Warning: /home/amalmathew/Desktop/Mandelbrot/fixed_pkg_c.vhdl(1471): (vcom-1246) Range 0 downto 1 is null.
+** Warning: /home/amalmathew/Desktop/Mandelbrot/fixed_pkg_c.vhdl(1472): (vcom-1246) Range 0 downto 1 is null.
+** Warning: /home/amalmathew/Desktop/Mandelbrot/fixed_pkg_c.vhdl(6888): (vcom-1246) Range 2 to 1 is null.
+
+} {} {}} /home/amalmathew/Desktop/Mandelbrot/Mandelbrot.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/amalmathew/Desktop/Mandelbrot/Mandelbrot.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity Mandelbrot
+-- Compiling architecture Behavior of Mandelbrot
+
+} {} {}} /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd {0 {vcom -work work -2002 -explicit -stats=none /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity Pointer
+-- Compiling architecture Behavior of Pointer
+** Error: /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd(36): Type error resolving infix expression "-" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd(37): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd(18): Nonresolved signal 'sfixed_x' has multiple sources.
+  Drivers:
+    /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd(34):Conditional signal assignment line__34
+** Error: /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd(19): Nonresolved signal 'sfixed_y' has multiple sources.
+  Drivers:
+    /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd(35):Conditional signal assignment line__35
+** Error: /home/amalmathew/intelFPGA_lite/19.1/modelsim_ase/bin/Pointer.vhd(41): VHDL Compiler exiting
+
+} {11.0 14.0 16.0 17.0 19.0 20.0} {}}
