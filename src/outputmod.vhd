@@ -1,0 +1,50 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use IEEE.std_logic_textio.all;                                  -- ADDED
+
+library std;
+use std.textio.all;
+LIBRARY work;
+USE work.fixed_pkg.all;
+
+entity Printer is
+generic ( N : integer:=18);
+port ( 
+ --DONE: in std_logic; -- from output module
+ result: in std_logic_vector(15 downto 0):= (others => '0'); -- output
+ Q_out: in std_logic_vector(N-1 downto 0):= (others => '0')
+ );
+end entity;
+
+
+
+architecture rtl of Printer is
+file outfile             : text open write_mode is "output_file.txt";
+signal mid_x		:integer;
+signal mid_y		:integer;
+signal result_holder		:integer;
+
+begin
+
+	mid_x <= to_integer(unsigned(Q_out(N-1 downto N/2)));
+	mid_y <= to_integer(unsigned(Q_out(N/2 -1 downto 0)));
+	result_holder <= (to_integer(unsigned(result))*255)/24;
+	process(mid_y) is
+	variable row		:line;
+	begin
+	if( mid_x>0 or mid_y>0) then
+--	if(
+--	write(row,mid_x);
+--	write(row,string'(" "));
+--	write(row,mid_y);
+--	write(row,string'(" "));
+	write(row, result_holder);
+	writeline(outfile,row);
+	end if;
+	end process;
+end rtl;
+	
+
